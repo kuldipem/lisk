@@ -36,7 +36,7 @@
 		"docs:serve": "./node_modules/.bin/http-server docs/jsdoc/",
 		"precommit": "lint-staged && npm run lint",
 		"prepush": "npm run lint",
-		"check:dependencies": "snyk protect",
+		"check:dependencies": "./node_modules/.bin/snyk protect",
 		"prepublish": "npm run check:dependencies"
 	},
 	"dependencies": {
@@ -77,7 +77,6 @@
 		"redis": "=2.7.1",
 		"rimraf": "=2.6.1",
 		"semver": "=5.3.0",
-		"snyk": "^1.69.6",
 		"socket.io": "=2.0.3",
 		"socketcluster": "=9.2.0",
 		"socketcluster-client": "=9.0.3",
@@ -123,6 +122,7 @@
 		"rewire": "=2.5.2",
 		"sinon": "=3.2.1",
 		"sinon-chai": "=2.14.0",
+		"snyk": "^1.69.6",
 		"stampit": "=4.0.2",
 		"supertest": "=3.0.0"
 	},
